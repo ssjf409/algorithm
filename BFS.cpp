@@ -25,17 +25,16 @@ void bfs(int start) {
  	c[start] = true;
  	while(!q.empty()) {
  		int x = q.front();
-		 q.pop();
-		 printf("%d ", x);
-		 for(int i = 0; i < a[x].size(); i++) {
-		 	int y = a[x][i];
-		 	if(!c[y]) {
+		q.pop();
+		printf("%d ", x);
+		for(int i = 0; i < a[x].size(); i++) {
+			int y = a[x][i];
+			if(!c[y]) {
 				q.push(y);
 				c[y] = true;
-			 }
-		 }	
+			}
+		}
 	}
-	
 } 
 
 int main(void) {

@@ -7,7 +7,7 @@ DAG(directed acyclic graph)에만 적용
 #include <iostream>
 #include <vector>
 #include <queue>
-#define MAX 10
+#define MAX 10 
 
 using namespace std;
 
