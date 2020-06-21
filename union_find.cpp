@@ -18,7 +18,7 @@ int unionParent(int parent[], int a, int b) {
 	a = getParent(parent, a);
 	b = getParent(parent, b);
 	if(a < b) parent[b] = a;
-	else parent[a] = bx;
+	else parent[a] = b;
 }
 
 // 같은 부모를 가지는지 확인

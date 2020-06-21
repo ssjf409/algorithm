@@ -14,12 +14,14 @@
 using namespace std;
 
 int number = 7;
-int c[7];
+int visited[7];
 vector<int> a[8];
 
 void dfs(int x) {
-	if(c[x]) return;
-	c[x] = true;
+	if(visited[x]) return;
+	
+	visited[x] = true;
+	
 	cout << x << ' ';
 	for(int i = 0; i < a[x].size(); i++) {
 		int y = a[x][i];
